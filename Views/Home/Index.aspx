@@ -16,15 +16,15 @@
     </h2>
     <a href="/Empleado/Empleado">Ver Empleados</a>
     <br />
-    <a href="/Curso/Index">Ver Cursos</a>
+    <a href="/Curso/Curso">Ver Cursos</a>
     <br />
-    <a href="/Tema/Index">Ver tema</a>
+    <a href="/Tema/Tema">Ver tema</a>
     <br />
-    <a href="/Video/Index">Ver Videos</a>
+    <a href="/Video/Video">Ver Videos</a>
     <br />
-    <a href="/Curso_Tema/Index">Ver Curso Tema</a>
+    <a href="/Curso_Tema/Curso_Tema">Ver Curso Tema</a>
     <br />
-    <a href="/Curso_Tema_Video/Index">Ver Cursos Tema Video</a>
+    <a href="/Curso_Tema_Video/Curso_Tema_Video">Ver Cursos Tema Video</a>
     <br />
 </body>
 </html>
