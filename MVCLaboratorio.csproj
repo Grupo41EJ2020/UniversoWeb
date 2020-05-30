@@ -104,6 +104,11 @@
     <Content Include="Views\Curso_Tema_Video\Curso_Tema_VideoDetails.aspx" />
     <Content Include="Views\Curso_Tema_Video\Curso_Tema_VideoEdit.aspx" />
     <Content Include="Views\Curso_Tema_Video\Curso_Tema_VideoInsert.aspx" />
+    <Content Include="Views\Empleado\Empleado.aspx" />
+    <Content Include="Views\Empleado\EmpleadoDelete.aspx" />
+    <Content Include="Views\Empleado\EmpleadoDetails.aspx" />
+    <Content Include="Views\Empleado\EmpleadoEdit.aspx" />
+    <Content Include="Views\Empleado\EmpleadoInsert.aspx" />
     <Content Include="Views\Home\Index.aspx" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
