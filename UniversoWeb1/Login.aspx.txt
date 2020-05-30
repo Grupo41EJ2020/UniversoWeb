@@ -1,0 +1,24 @@
+<%@ Page LANGUAGE="cs" %>
+<form runat=server>
+<asp:literal runat=server id="MyText" Text=""></asp:literal>
+<asp:TextBox runat=server id="UsernameTextBox" Text="Type a user name"></asp:TextBox>
+<asp:TextBox runat=server id="PasswordTextBox" Text="Type a password"></asp:TextBox>
+<asp:Button id="Submit"  Text="Submit" runat="server"/>
+</form>
+<script runat="server" >
+protected void Page_Load(Object source, EventArgs e)
+  {
+
+MyText.Text += "[Login Page: you are not authenticated]<br>";
+      String strUserName  = UsernameTextBox.Text;
+      String strPassword  = PasswordTextBox.Text;
+
+      bool   fPersist     = false;
+      bool   fVerifed     = System.Web.Security.FormsAuthentication.Authenticate(strUserName, strPassword);
+      if( fVerifed)
+      {
+          System.Web.Security.FormsAuthentication.RedirectFromLoginPage(strUserName, fPersist);
+      }
+  }
+
+</script>

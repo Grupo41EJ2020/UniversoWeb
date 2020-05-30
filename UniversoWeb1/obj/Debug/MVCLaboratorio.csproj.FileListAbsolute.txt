@@ -1,0 +1,5 @@
+C:\Pia final\UniversoWeb\obj\Debug\MVCLaboratorio.csprojResolveAssemblyReference.cache
+C:\Pia final\UniversoWeb\bin\MVCLaboratorio.dll
+C:\Pia final\UniversoWeb\bin\MVCLaboratorio.pdb
+C:\Pia final\UniversoWeb\obj\Debug\MVCLaboratorio.dll
+C:\Pia final\UniversoWeb\obj\Debug\MVCLaboratorio.pdb

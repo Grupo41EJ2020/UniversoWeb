@@ -1,0 +1,30 @@
+<%@ Page LANGUAGE="cs" Debug="true" %>
+<form runat="server">
+<asp:Literal runat="server" id="Literal1" Text=""></asp:literal>
+<asp:Button text="Signout" OnClick="Signout_Click" id="SignOutButton" runat=server/>
+</form>
+<script runat="server" >
+void Page_Load(object sender, EventArgs e) 
+{
+
+Literal1.Text += "[User.Identity.Name=" + User.Identity.Name +"]<br>";
+Profile.FavoriteURLs = new System.Collections.Specialized.StringCollection();
+Profile.FavoriteURLs.Add("MyString1");
+Profile.FavoriteURLs.Add("MyString2");
+Profile.FavoriteURLs.Add("MyString3");
+
+
+if (Profile.FavoriteURLs != null) {
+for (int i=0; i<Profile.FavoriteURLs.Count; i++) {
+Literal1.Text += "[FavoriteURLs=" + Profile.FavoriteURLs[i] + "]<br>";
+}
+}
+
+}
+
+
+void Signout_Click(Object sender, EventArgs E) {  
+    System.Web.Security.FormsAuthentication.SignOut();
+    Response.Redirect(System.Web.Security.FormsAuthentication.LoginUrl);
+}
+</script>
