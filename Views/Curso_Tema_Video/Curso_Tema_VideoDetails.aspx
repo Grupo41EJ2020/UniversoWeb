@@ -22,7 +22,7 @@
     </fieldset>
     <p>
        
-        <%: Html.ActionLink("Regresar", "Index") %>
+        <%: Html.ActionLink("Regresar", "Curso_Tema_Video") %>
     </p>
 
 </body>
